@@ -1,18 +1,83 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+p {
+  margin-bottom: 5px;
+}
+.btnElm {
+  padding: 10px;
+  width: 100px;
+}
+.load-more {
+  color: black;
+  background-color: rgb(183, 193, 201);
+  margin-left: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100px;
+}
+
+.is-hidden {
+  display: none;
+}
+.photo-card {
+  flex-basis: calc(25% -22.5px);
+  position: relative;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.info-item {
+  text-align: center;
+}
+.input {
+  width: 250px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.search-form {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 80vh;
+}
+.gallery img {
+  height: 140px;
+  cursor: pointer;
 }
